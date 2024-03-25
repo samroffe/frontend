@@ -1,0 +1,291 @@
+
+body {
+  background-color: #1a1b1e;
+}
+
+.app {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  height: 100vh;
+  padding: 20px 0px 20px 20px;
+  box-sizing: border-box;
+  background-color: #0b0a0a;
+}
+
+.app-header {
+  background-color: #282c34 !important;
+  color: white !important;
+}
+
+.chat-window {
+  flex-grow: 1;
+  overflow-y: auto;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border: none;
+  border-radius: 10px;
+  background-color: #1a1b1e;
+  margin-left: 30px;
+  user-select: none;
+  width: 100%;
+}
+
+.mainContainer {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.titleContainer {
+  color:rgba(95, 61, 182, 0.559);
+  flex-direction: column;
+  font-size: 100px;
+  font-weight: bolder;
+  margin-left: -55%;
+  user-select: none;
+}
+.LogintitleContainer {
+  color:rgba(95, 61, 182, 0.559);
+  font-size: 140px;
+  font-weight: bolder;
+  margin-left: 14%;
+  user-select: none;
+}
+
+.titleContainer span {
+  display: inline !important;
+}
+.feature{
+  display: flex;
+  margin-left: -55%;
+  color:rgba(249, 247, 255, 0.792);
+  flex-direction: column;
+  font-size: 30px;
+}
+
+.featureTitle {
+  color:rgba(249, 247, 255, 0.792);
+  font-size: 50px;
+  font-weight: bolder;
+
+}
+.Loginfeature{
+  display: flex;
+  padding-top: 20px;
+  margin-left: -89.5%;
+  color:rgba(249, 247, 255, 0.792);
+  flex-direction: column;
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+.LoginContainer {
+  display: flex;
+  color:rgba(95, 61, 182, 0.559);
+  flex-direction: column;
+  font-size: 60px;
+  font-weight: bolder;
+}
+
+
+.buttonContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 260px;
+}
+
+
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.inputContainer > .errorLabel {
+  color: red;
+  font-size: 12px;
+}
+.inputBox {
+  height: 48px;
+  width: 400px;
+  font-size: large;
+  border-radius: 8px;
+  border: 1px solid grey;
+  padding-left: 8px;
+}
+
+.MuiListItemText-primary {
+  text-align: left;
+}
+
+.MuiListItemText-secondary {
+  text-align: right;
+}
+
+.chat-input {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 30%; /* Adjust as needed */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.roundBox {
+  width: 500px;
+  height: 500px;
+  border-radius: 10%;
+  margin-left: +100%;
+  position: fixed;
+  top: 35%; /* Adjust as needed */
+  right: 20%;
+}
+
+.roundBox img {
+  width: 100%;
+  height: auto;
+}
+/* .side-panel {
+  width: 1000px !important;
+} */
+
+.input-field {
+  background-color: #282c34 !important;
+  width: 100%;
+  border-radius: 25px;
+}
+
+.message {
+  display: flex;
+  flex-direction: row; /* Align items in a row */
+  align-items: flex-start;  /* Align items along the center line */
+  margin-bottom: 20px; /* Add some space between messages */
+}
+
+.message.user,
+.message.ai {
+  justify-content: flex-start;
+  color:red /* Align messages to the start */
+}
+
+.welcome-message {
+  color: rgba(95, 61, 182, 0.559);
+  font-size: 50px;
+  padding-left: 34%;
+  padding-top: 100px;
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+
+.skeleton {
+  margin-left: 9px;
+  padding-left: 260px;
+
+  
+}
+
+.skeleton-message {
+  margin-top: 8px;
+}
+
+.help-message {
+  color: rgba(135, 130, 130, 0.664);
+  font-size: 50px;
+  padding-left: 34%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+
+.avatar {
+  height: 40px;
+  border-radius: 50%;
+  margin-left: 10%; /* No space between the avatar and the message */
+}
+
+.message-content {
+    padding: 0; /* No padding */
+    line-height: 1.5;
+    padding-left: 10px;
+    width: 90%; /* Set a specific width */
+    margin: 0 auto; /* Width based on content */
+    margin-right: 10px; /* Remove auto margin */
+    background-color: transparent; /* No background */
+    border-radius: 0; /* No rounded edges */
+    color: #fff; /* White text */
+  }
+
+  .letterG {
+    color: rgb(8, 31, 167); /* Adjust as needed */
+  }
+  
+  .letterP {
+    color: rgb(61, 125, 214); /* Adjust as needed */
+  }
+  
+  .letterT {
+    color: rgb(111, 91, 198); /* Adjust as needed */
+  }
+  
+  .letterPlus {
+    color: purple; /* Adjust as needed */
+  }
+
+.aws-box,
+.s3-box ,.shopping{
+      background-color: #2a2b2e;
+      color: #fff;
+      padding: 16px;
+      width: 150px;
+      height: 150px;
+      margin: 10px;
+      border-radius: 10px;
+      /* Add some space around the boxes */
+    }
+  
+.aws-box {
+      margin-left: 860px;
+      /* Adjust this value to move the box to the left */
+  }
+  
+.s3-box {
+      margin-left: 1%;
+      /* Adjust this value to move the box to the right */
+  }
+
+  .shopping {
+    margin-left: 1%;
+    /* Adjust this value to move the box to the right */
+  }
+.MuiDrawer-paper {
+  background-color: #050606 !important;
+  width: 200px !important;
+}
+
+.input-field .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline {
+  border-color: white;
+  border-radius: 25px;
+}
+
+.input-field .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+  border-color: white;
+  border-radius: 25px;
+}
+
+.input-field .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: white;
+}
+
+.input-field .MuiOutlinedInput-input {
+  color: white;
+}

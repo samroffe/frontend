@@ -5,6 +5,7 @@ const images = [
   '/aws-gif.gif',
   '/gif-final.gif',
   '/flights.jpg',
+  '/bookmyshow.jpg'
   // add more image paths as needed
 ];
 

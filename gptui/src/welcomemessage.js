@@ -13,13 +13,17 @@ function WelcomeMessage({ handleBoxClick }) {
           <Typography variant="body1">Set up an AWS instance</Typography>
           <Typography variant="body1">within the US East (N. Virginia) region</Typography>
         </Box>
-        <Box className="s3-box" onClick={() => handleBoxClick('Search Flight from BLR to HYD on 1st Apr 2024 and return on 4th April 2024')}>
+        <Box className="s3-box" onClick={() => handleBoxClick('Help me search Flight from BLR to HYD on 1st Apr 2024 and return flight on 4th April 2024')}>
           <Typography variant="body1">Search Best Flights </Typography>
           <Typography variant="body1">from BLR to HYD</Typography>
         </Box>
         <Box className="shopping" onClick={() => handleBoxClick('Help me buy tshirt from Nike under Rs 1000')}>
           <Typography variant="body1">Help me buy tshirt</Typography>
           <Typography variant="body1">from Nike?</Typography>
+        </Box>
+        <Box className="movie" onClick={() => handleBoxClick('Help me find all English movies currently showing in Bengaluru')}>
+          <Typography variant="body1">Help me find current English</Typography>
+          <Typography variant="body1">movies?</Typography>
         </Box>
       </div>
     </div>

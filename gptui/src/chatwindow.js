@@ -3,6 +3,7 @@ import { Paper, List } from '@mui/material';
 import SkeletonLoader from './Skeleton';
 import WelcomeMessage from './welcomemessage';
 import axios from 'axios';
+import Linkify from 'react-linkify';
 
   
 function ChatWindow({ messages, loading, setMessages, setLoading }) {
@@ -30,7 +31,7 @@ function ChatWindow({ messages, loading, setMessages, setLoading }) {
               {message.role === 'user' && <img src="/user.png" alt="" className="avatar" />}
               {message.role === 'ai' && <img src="/ai.png" alt="" className="avatar" />}
               <div className="message-content">
-                {message.role === 'ai' ? <pre>{message.content}</pre> : message.content}
+                {message.role === 'ai' ? <Linkify><pre>{message.content}</pre></Linkify> : message.content}
               </div>
             </div>
           ))}

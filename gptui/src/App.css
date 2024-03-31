@@ -28,7 +28,6 @@ body {
   border-radius: 10px;
   background-color: #1a1b1e;
   margin-left: 30px;
-  user-select: none;
   width: 100%;
 }
 
@@ -46,7 +45,9 @@ body {
   font-size: 100px;
   font-weight: bolder;
   margin-left: -55%;
+  margin-top: -7%;
   user-select: none;
+
 }
 .LogintitleContainer {
   color:rgba(95, 61, 182, 0.559);
@@ -62,6 +63,7 @@ body {
 .feature{
   display: flex;
   margin-left: -55%;
+  user-select: none;
   color:rgba(249, 247, 255, 0.792);
   flex-direction: column;
   font-size: 30px;
@@ -70,13 +72,14 @@ body {
 .featureTitle {
   color:rgba(249, 247, 255, 0.792);
   font-size: 50px;
+  user-select: none;
   font-weight: bolder;
 
 }
 .Loginfeature{
   display: flex;
   padding-top: 20px;
-  margin-left: -89.5%;
+  margin-left: -90%;
   color:rgba(249, 247, 255, 0.792);
   flex-direction: column;
   font-size: 30px;
@@ -217,6 +220,7 @@ body {
     padding: 0; /* No padding */
     line-height: 1.5;
     padding-left: 10px;
+    font-size: 15px;
     width: 90%; /* Set a specific width */
     margin: 0 auto; /* Width based on content */
     margin-right: 10px; /* Remove auto margin */
@@ -242,7 +246,7 @@ body {
   }
 
 .aws-box,
-.s3-box ,.shopping{
+.s3-box ,.shopping,.movie{
       background-color: #2a2b2e;
       color: #fff;
       padding: 16px;

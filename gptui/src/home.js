@@ -1,6 +1,6 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
-import { Button } from '@mui/material';
+import {  AppBar, Toolbar, Typography, Button } from '@mui/material';
 import ImageBox from './imagebox';
 
 
@@ -18,6 +18,16 @@ const Home = (props) => {
     }
 
   return (
+    <>
+    <AppBar position="static" sx={{ backgroundColor: 'transparent' }}>
+      <Toolbar>
+        <Typography variant="h6" style={{ flexGrow: 1 }}>
+          Home
+        </Typography>
+        <Button color="inherit" href="/about">About</Button>
+        <Button type="submit" variant="contained" color="primary" sx={{ borderRadius: '25px' }} href="/login">Sign in</Button>
+      </Toolbar>
+    </AppBar>
     <form onSubmit={handleSubmit}>
     <div className="mainContainer">
       <div>
@@ -40,8 +50,8 @@ const Home = (props) => {
           </div>
       </div>
       <div className="Loginfeature">
-      <Button type="submit" variant="contained" color="primary">
-            Log in
+      <Button type="submit" variant="contained" color="primary" sx={{ borderRadius: '25px' }}>
+            Sign in
       </Button>
     </div>
     <div>
@@ -49,8 +59,8 @@ const Home = (props) => {
     </div>
     </div>
     </form>
-  )
-  
+    </>
+  ) 
 }
 
 export default Home
